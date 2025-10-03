@@ -1,0 +1,309 @@
+
+2025-10-03 09:40:33,822 - asyncio - DEBUG - proactor_events.py:630 - __init__() - Using proactor: IocpProactor
+2025-10-03 09:40:33,822 - root - INFO - talk2mcp.py:58 - main() - Starting main execution...
+2025-10-03 09:40:33,822 - root - INFO - talk2mcp.py:61 - main() - Establishing connection to MCP server...
+2025-10-03 09:40:33,845 - root - INFO - talk2mcp.py:68 - main() - Connection established, creating session...
+2025-10-03 09:40:33,845 - root - INFO - talk2mcp.py:70 - main() - Session created, initializing...
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:157 - __init__() - Initializing server 'Calculator'
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:414 - decorator() - Registering handler for ListToolsRequest
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:486 - decorator() - Registering handler for CallToolRequest
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:281 - decorator() - Registering handler for ListResourcesRequest
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:316 - decorator() - Registering handler for ReadResourceRequest
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:243 - decorator() - Registering handler for PromptListRequest
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:265 - decorator() - Registering handler for GetPromptRequest
+2025-10-03 09:40:35,234 - mcp.server.lowlevel.server - DEBUG - server.py:301 - decorator() - Registering handler for ListResourceTemplatesRequest
+2025-10-03 09:40:35,296 - asyncio - DEBUG - proactor_events.py:630 - __init__() - Using proactor: IocpProactor
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:74 - main() - Requesting tool list...
+2025-10-03 09:40:35,312 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-10-03 09:40:35,312 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D6321000>
+2025-10-03 09:40:35,312 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type ListToolsRequest
+2025-10-03 09:40:35,312 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type ListToolsRequest
+2025-10-03 09:40:35,312 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:77 - main() - Successfully retrieved 23 tools
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:80 - main() - Creating system prompt...
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:81 - main() - Number of tools: 23
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 1. add(a: integer, b: integer) - Add two numbers
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 2. add_list(l: array) - Add all numbers in a list
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 3. subtract(a: integer, b: integer) - Subtract two numbers
+2025-10-03 09:40:35,312 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 4. multiply(a: integer, b: integer) - Multiply two numbers
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 5. divide(a: integer, b: integer) - Divide two numbers
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 6. power(a: integer, b: integer) - Power of two numbers
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 7. sqrt(a: integer) - Square root of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 8. cbrt(a: integer) - Cube root of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 9. factorial(a: integer) - factorial of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 10. log(a: integer) - log of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 11. remainder(a: integer, b: integer) - remainder of two numbers divison
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 12. sin(a: integer) - sin of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 13. cos(a: integer) - cos of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 14. tan(a: integer) - tan of a number
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 15. mine(a: integer, b: integer) - special mining tool
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 16. create_thumbnail(image_path: string) - Create a thumbnail from an image
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 17. strings_to_chars_to_int(string: string) - Return the ASCII values of the characters in a word
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 18. int_list_to_exponential_sum(int_list: array) - Return sum of exponentials of numbers in a list
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 19. fibonacci_numbers(n: integer) - Return the first n Fibonacci Numbers
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 20. draw_rectangle(x1: integer, y1: integer, x2: integer, y2: integer) - Draw a rectangle in Paint from (x1,y1) to (x2,y2)
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 21. add_text_in_paint(text: string) - Add text in Paint
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 22. open_paint() - Open Microsoft Paint maximized on primary monitor
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:109 - main() - Added description for tool: 23. send_email(text: string) - Send email with the text content
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:115 - main() - Successfully created tools description
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:120 - main() - Created system prompt...
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:156 - main() - Starting iteration loop...
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 1 ---
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:40:35,317 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:40:35,317 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:40:35,317 - httpcore.connection - DEBUG - _trace.py:47 - trace() - connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-03 09:40:35,344 - httpcore.connection - DEBUG - _trace.py:47 - trace() - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E1A7E11B10>
+2025-10-03 09:40:35,344 - httpcore.connection - DEBUG - _trace.py:47 - trace() - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E1A7CE4A40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2025-10-03 09:40:35,358 - httpcore.connection - DEBUG - _trace.py:47 - trace() - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E1A7E11AE0>
+2025-10-03 09:40:35,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:35,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:40:35,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:40:35,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:40:35,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:36,886 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:10:34 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1431'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:40:36,886 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:40:36,886 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:40:36,886 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:40:36,890 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:40:36,890 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FUNCTION_CALL: strings_to_chars_to_int|INDIA
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:194 - main() - 
+DEBUG: Raw function info:  strings_to_chars_to_int|INDIA
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:195 - main() - DEBUG: Split parts: ['strings_to_chars_to_int', 'INDIA']
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:196 - main() - DEBUG: Function name: strings_to_chars_to_int
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:197 - main() - DEBUG: Raw parameters: ['INDIA']
+2025-10-03 09:40:36,890 - root - INFO - talk2mcp.py:206 - main() - DEBUG: Found tool: strings_to_chars_to_int
+2025-10-03 09:40:36,892 - root - INFO - talk2mcp.py:207 - main() - DEBUG: Tool schema: {'properties': {'string': {'title': 'String', 'type': 'string'}}, 'required': ['string'], 'title': 'strings_to_chars_to_intArguments', 'type': 'object'}
+2025-10-03 09:40:36,892 - root - INFO - talk2mcp.py:212 - main() - DEBUG: Schema properties: {'string': {'title': 'String', 'type': 'string'}}
+2025-10-03 09:40:36,892 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter string with value INDIA to type string
+2025-10-03 09:40:36,892 - root - INFO - talk2mcp.py:236 - main() - DEBUG: Final arguments: {'string': 'INDIA'}
+2025-10-03 09:40:36,892 - root - INFO - talk2mcp.py:237 - main() - DEBUG: Calling tool strings_to_chars_to_int
+2025-10-03 09:40:36,892 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D63210C0>
+2025-10-03 09:40:36,894 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type CallToolRequest
+2025-10-03 09:40:36,894 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type CallToolRequest
+2025-10-03 09:40:36,894 - root - INFO - mcp_paint_server.py:146 - strings_to_chars_to_int() - CALLED: strings_to_chars_to_int(string: str) -> list[int]:
+2025-10-03 09:40:36,896 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:40:36,898 - root - INFO - talk2mcp.py:240 - main() - DEBUG: Raw result: meta=None content=[TextContent(type='text', text='73', annotations=None, meta=None), TextContent(type='text', text='78', annotations=None, meta=None), TextContent(type='text', text='68', annotations=None, meta=None), TextContent(type='text', text='73', annotations=None, meta=None), TextContent(type='text', text='65', annotations=None, meta=None)] structuredContent={'result': [73, 78, 68, 73, 65]} isError=False
+2025-10-03 09:40:36,898 - root - INFO - talk2mcp.py:244 - main() - DEBUG: Result has content attribute
+2025-10-03 09:40:36,898 - root - INFO - talk2mcp.py:257 - main() - DEBUG: Final iteration result: ['73', '78', '68', '73', '65']
+2025-10-03 09:40:36,898 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 2 ---
+2025-10-03 09:40:36,898 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:40:36,898 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:40:36,898 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:40:36,900 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:36,900 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:40:36,900 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:40:36,900 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:40:36,900 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:37,912 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:10:35 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=993'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:40:37,912 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:40:37,913 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:40:37,913 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:40:37,913 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:40:37,913 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FUNCTION_CALL: int_list_to_exponential_sum|[73, 78, 68, 73, 65]
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:194 - main() - 
+DEBUG: Raw function info:  int_list_to_exponential_sum|[73, 78, 68, 73, 65]
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:195 - main() - DEBUG: Split parts: ['int_list_to_exponential_sum', '[73, 78, 68, 73, 65]']
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:196 - main() - DEBUG: Function name: int_list_to_exponential_sum
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:197 - main() - DEBUG: Raw parameters: ['[73, 78, 68, 73, 65]']
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:206 - main() - DEBUG: Found tool: int_list_to_exponential_sum
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:207 - main() - DEBUG: Tool schema: {'properties': {'int_list': {'items': {}, 'title': 'Int List', 'type': 'array'}}, 'required': ['int_list'], 'title': 'int_list_to_exponential_sumArguments', 'type': 'object'}
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:212 - main() - DEBUG: Schema properties: {'int_list': {'items': {}, 'title': 'Int List', 'type': 'array'}}
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter int_list with value [73, 78, 68, 73, 65] to type array
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:236 - main() - DEBUG: Final arguments: {'int_list': [73, 78, 68, 73, 65]}
+2025-10-03 09:40:37,914 - root - INFO - talk2mcp.py:237 - main() - DEBUG: Calling tool int_list_to_exponential_sum
+2025-10-03 09:40:37,914 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D6320FD0>
+2025-10-03 09:40:37,914 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type CallToolRequest
+2025-10-03 09:40:37,914 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type CallToolRequest
+2025-10-03 09:40:37,914 - root - INFO - mcp_paint_server.py:152 - int_list_to_exponential_sum() - CALLED: int_list_to_exponential_sum(int_list: list) -> float:
+2025-10-03 09:40:37,914 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:40:37,922 - root - INFO - talk2mcp.py:240 - main() - DEBUG: Raw result: meta=None content=[TextContent(type='text', text='7.599822246093079e33', annotations=None, meta=None)] structuredContent={'result': 7.599822246093079e+33} isError=False
+2025-10-03 09:40:37,922 - root - INFO - talk2mcp.py:244 - main() - DEBUG: Result has content attribute
+2025-10-03 09:40:37,922 - root - INFO - talk2mcp.py:257 - main() - DEBUG: Final iteration result: ['7.599822246093079e33']
+2025-10-03 09:40:37,922 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 3 ---
+2025-10-03 09:40:37,922 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:40:37,922 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:40:37,922 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:40:37,922 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:37,922 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:40:37,922 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:40:37,922 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:40:37,922 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:38,731 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:10:35 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=716'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:40:38,731 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:40:38,731 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:40:38,732 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:40:38,732 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:40:38,732 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FUNCTION_CALL: open_paint
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:194 - main() - 
+DEBUG: Raw function info:  open_paint
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:195 - main() - DEBUG: Split parts: ['open_paint']
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:196 - main() - DEBUG: Function name: open_paint
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:197 - main() - DEBUG: Raw parameters: []
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:206 - main() - DEBUG: Found tool: open_paint
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:207 - main() - DEBUG: Tool schema: {'properties': {}, 'title': 'open_paintArguments', 'type': 'object'}
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:212 - main() - DEBUG: Schema properties: {}
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:236 - main() - DEBUG: Final arguments: {}
+2025-10-03 09:40:38,732 - root - INFO - talk2mcp.py:237 - main() - DEBUG: Calling tool open_paint
+2025-10-03 09:40:38,732 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D6321090>
+2025-10-03 09:40:38,732 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type CallToolRequest
+2025-10-03 09:40:38,732 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type CallToolRequest
+2025-10-03 09:40:40,350 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:40:40,352 - root - INFO - talk2mcp.py:240 - main() - DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{\n  "content": [\n    {\n      "type": "text",\n      "text": "Paint opened successfully on primary monitor and maximized",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}', annotations=None, meta=None)] structuredContent=None isError=False
+2025-10-03 09:40:40,352 - root - INFO - talk2mcp.py:244 - main() - DEBUG: Result has content attribute
+2025-10-03 09:40:40,352 - root - INFO - talk2mcp.py:257 - main() - DEBUG: Final iteration result: ['{\n  "content": [\n    {\n      "type": "text",\n      "text": "Paint opened successfully on primary monitor and maximized",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}']
+2025-10-03 09:40:40,352 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 4 ---
+2025-10-03 09:40:40,352 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:40:40,352 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:40:40,352 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:40:40,352 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:40,352 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:40:40,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:40:40,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:40:40,358 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:41,189 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:10:38 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=803'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:40:41,192 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:40:41,192 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:40:41,192 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:40:41,192 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:40:41,192 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FUNCTION_CALL: draw_rectangle|607|425|940|619
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:194 - main() - 
+DEBUG: Raw function info:  draw_rectangle|607|425|940|619
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:195 - main() - DEBUG: Split parts: ['draw_rectangle', '607', '425', '940', '619']
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:196 - main() - DEBUG: Function name: draw_rectangle
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:197 - main() - DEBUG: Raw parameters: ['607', '425', '940', '619']
+2025-10-03 09:40:41,192 - root - INFO - talk2mcp.py:206 - main() - DEBUG: Found tool: draw_rectangle
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:207 - main() - DEBUG: Tool schema: {'properties': {'x1': {'title': 'X1', 'type': 'integer'}, 'y1': {'title': 'Y1', 'type': 'integer'}, 'x2': {'title': 'X2', 'type': 'integer'}, 'y2': {'title': 'Y2', 'type': 'integer'}}, 'required': ['x1', 'y1', 'x2', 'y2'], 'title': 'draw_rectangleArguments', 'type': 'object'}
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:212 - main() - DEBUG: Schema properties: {'x1': {'title': 'X1', 'type': 'integer'}, 'y1': {'title': 'Y1', 'type': 'integer'}, 'x2': {'title': 'X2', 'type': 'integer'}, 'y2': {'title': 'Y2', 'type': 'integer'}}
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter x1 with value 607 to type integer
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter y1 with value 425 to type integer
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter x2 with value 940 to type integer
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter y2 with value 619 to type integer
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:236 - main() - DEBUG: Final arguments: {'x1': 607, 'y1': 425, 'x2': 940, 'y2': 619}
+2025-10-03 09:40:41,194 - root - INFO - talk2mcp.py:237 - main() - DEBUG: Calling tool draw_rectangle
+2025-10-03 09:40:41,194 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D6321000>
+2025-10-03 09:40:41,194 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type CallToolRequest
+2025-10-03 09:40:41,194 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type CallToolRequest
+2025-10-03 09:40:51,772 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:40:51,774 - root - INFO - talk2mcp.py:240 - main() - DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{\n  "content": [\n    {\n      "type": "text",\n      "text": "Rectangle drawn from (607,425) to (940,619)",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}', annotations=None, meta=None)] structuredContent=None isError=False
+2025-10-03 09:40:51,774 - root - INFO - talk2mcp.py:244 - main() - DEBUG: Result has content attribute
+2025-10-03 09:40:51,774 - root - INFO - talk2mcp.py:257 - main() - DEBUG: Final iteration result: ['{\n  "content": [\n    {\n      "type": "text",\n      "text": "Rectangle drawn from (607,425) to (940,619)",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}']
+2025-10-03 09:40:51,774 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 5 ---
+2025-10-03 09:40:51,774 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:40:51,774 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:40:51,774 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:40:51,774 - httpcore.connection - DEBUG - _trace.py:47 - trace() - close.started
+2025-10-03 09:40:51,779 - httpcore.connection - DEBUG - _trace.py:47 - trace() - close.complete
+2025-10-03 09:40:51,779 - httpcore.connection - DEBUG - _trace.py:47 - trace() - connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-03 09:40:51,791 - httpcore.connection - DEBUG - _trace.py:47 - trace() - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E1A7E139A0>
+2025-10-03 09:40:51,791 - httpcore.connection - DEBUG - _trace.py:47 - trace() - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E1A7CE4A40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2025-10-03 09:40:51,804 - httpcore.connection - DEBUG - _trace.py:47 - trace() - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E1A7E13970>
+2025-10-03 09:40:51,804 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:51,804 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:40:51,806 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:40:51,806 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:40:51,807 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:40:53,375 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:10:50 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1533'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:40:53,375 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:40:53,375 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:40:53,378 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:40:53,378 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:40:53,378 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FUNCTION_CALL: add_text_in_paint|7.599822246093079e33
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:194 - main() - 
+DEBUG: Raw function info:  add_text_in_paint|7.599822246093079e33
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:195 - main() - DEBUG: Split parts: ['add_text_in_paint', '7.599822246093079e33']
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:196 - main() - DEBUG: Function name: add_text_in_paint
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:197 - main() - DEBUG: Raw parameters: ['7.599822246093079e33']
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:206 - main() - DEBUG: Found tool: add_text_in_paint
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:207 - main() - DEBUG: Tool schema: {'properties': {'text': {'title': 'Text', 'type': 'string'}}, 'required': ['text'], 'title': 'add_text_in_paintArguments', 'type': 'object'}
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:212 - main() - DEBUG: Schema properties: {'text': {'title': 'Text', 'type': 'string'}}
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter text with value 7.599822246093079e33 to type string
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:236 - main() - DEBUG: Final arguments: {'text': '7.599822246093079e33'}
+2025-10-03 09:40:53,378 - root - INFO - talk2mcp.py:237 - main() - DEBUG: Calling tool add_text_in_paint
+2025-10-03 09:40:53,384 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D6320250>
+2025-10-03 09:40:53,384 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type CallToolRequest
+2025-10-03 09:40:53,384 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type CallToolRequest
+2025-10-03 09:41:03,581 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:41:03,584 - root - INFO - talk2mcp.py:240 - main() - DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{\n  "content": [\n    {\n      "type": "text",\n      "text": "Text:\'7.599822246093079e33\' added successfully",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}', annotations=None, meta=None)] structuredContent=None isError=False
+2025-10-03 09:41:03,584 - root - INFO - talk2mcp.py:244 - main() - DEBUG: Result has content attribute
+2025-10-03 09:41:03,584 - root - INFO - talk2mcp.py:257 - main() - DEBUG: Final iteration result: ['{\n  "content": [\n    {\n      "type": "text",\n      "text": "Text:\'7.599822246093079e33\' added successfully",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}']
+2025-10-03 09:41:03,584 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 6 ---
+2025-10-03 09:41:03,584 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:41:03,584 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:41:03,586 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:41:03,586 - httpcore.connection - DEBUG - _trace.py:47 - trace() - close.started
+2025-10-03 09:41:03,586 - httpcore.connection - DEBUG - _trace.py:47 - trace() - close.complete
+2025-10-03 09:41:03,586 - httpcore.connection - DEBUG - _trace.py:47 - trace() - connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-03 09:41:03,606 - httpcore.connection - DEBUG - _trace.py:47 - trace() - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E1A7E11810>
+2025-10-03 09:41:03,606 - httpcore.connection - DEBUG - _trace.py:47 - trace() - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E1A7CE4A40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2025-10-03 09:41:03,622 - httpcore.connection - DEBUG - _trace.py:47 - trace() - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E1A7E11780>
+2025-10-03 09:41:03,622 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:41:03,622 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:41:03,622 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:41:03,624 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:41:03,624 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:41:05,152 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:11:02 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1472'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:41:05,152 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:41:05,154 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:41:05,154 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:41:05,154 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:41:05,154 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FUNCTION_CALL: send_email|7.599822246093079e33
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:194 - main() - 
+DEBUG: Raw function info:  send_email|7.599822246093079e33
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:195 - main() - DEBUG: Split parts: ['send_email', '7.599822246093079e33']
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:196 - main() - DEBUG: Function name: send_email
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:197 - main() - DEBUG: Raw parameters: ['7.599822246093079e33']
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:206 - main() - DEBUG: Found tool: send_email
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:207 - main() - DEBUG: Tool schema: {'properties': {'text': {'title': 'Text', 'type': 'string'}}, 'required': ['text'], 'title': 'send_emailArguments', 'type': 'object'}
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:212 - main() - DEBUG: Schema properties: {'text': {'title': 'Text', 'type': 'string'}}
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:221 - main() - DEBUG: Converting parameter text with value 7.599822246093079e33 to type string
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:236 - main() - DEBUG: Final arguments: {'text': '7.599822246093079e33'}
+2025-10-03 09:41:05,154 - root - INFO - talk2mcp.py:237 - main() - DEBUG: Calling tool send_email
+2025-10-03 09:41:05,160 - mcp.server.lowlevel.server - DEBUG - server.py:627 - run() - Received message: <mcp.shared.session.RequestResponder object at 0x00000159D6321150>
+2025-10-03 09:41:05,162 - mcp.server.lowlevel.server - INFO - server.py:664 - _handle_request() - Processing request of type CallToolRequest
+2025-10-03 09:41:05,162 - mcp.server.lowlevel.server - DEBUG - server.py:666 - _handle_request() - Dispatching request of type CallToolRequest
+2025-10-03 09:41:08,455 - root - INFO - mcp_paint_server.py:394 - send_email() - Email sent successfully with content 7.599822246093079e33
+2025-10-03 09:41:08,455 - mcp.server.lowlevel.server - DEBUG - server.py:713 - _handle_request() - Response sent
+2025-10-03 09:41:08,462 - root - INFO - talk2mcp.py:240 - main() - DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{\n  "content": [\n    {\n      "type": "text",\n      "text": "Email sent successfully!",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}', annotations=None, meta=None)] structuredContent=None isError=False
+2025-10-03 09:41:08,462 - root - INFO - talk2mcp.py:244 - main() - DEBUG: Result has content attribute
+2025-10-03 09:41:08,462 - root - INFO - talk2mcp.py:257 - main() - DEBUG: Final iteration result: ['{\n  "content": [\n    {\n      "type": "text",\n      "text": "Email sent successfully!",\n      "annotations": null,\n      "_meta": null\n    }\n  ]\n}']
+2025-10-03 09:41:08,462 - root - INFO - talk2mcp.py:162 - main() - 
+--- Iteration 7 ---
+2025-10-03 09:41:08,462 - root - INFO - talk2mcp.py:170 - main() - Preparing to generate LLM response...
+2025-10-03 09:41:08,462 - root - INFO - talk2mcp.py:26 - generate_with_timeout() - Starting LLM generation...
+2025-10-03 09:41:08,464 - google_genai.models - INFO - models.py:6458 - generate_content() - AFC is enabled with max remote calls: 10.
+2025-10-03 09:41:08,464 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.started request=<Request [b'POST']>
+2025-10-03 09:41:08,464 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_headers.complete
+2025-10-03 09:41:08,464 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.started request=<Request [b'POST']>
+2025-10-03 09:41:08,464 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - send_request_body.complete
+2025-10-03 09:41:08,464 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.started request=<Request [b'POST']>
+2025-10-03 09:41:09,284 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 03 Oct 2025 04:11:06 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=804'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-03 09:41:09,288 - httpx - INFO - _client.py:1025 - _send_single_request() - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-03 09:41:09,288 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.started request=<Request [b'POST']>
+2025-10-03 09:41:09,288 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - receive_response_body.complete
+2025-10-03 09:41:09,288 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.started
+2025-10-03 09:41:09,291 - httpcore.http11 - DEBUG - _trace.py:47 - trace() - response_closed.complete
+2025-10-03 09:41:09,293 - root - INFO - talk2mcp.py:40 - generate_with_timeout() - LLM generation completed
+2025-10-03 09:41:09,293 - root - INFO - talk2mcp.py:175 - main() - LLM Response: FINAL_ANSWER: ALL TASKS COMPLETED
+2025-10-03 09:41:09,294 - root - INFO - talk2mcp.py:280 - main() - 
+=== Agent Execution Complete ===
+2025-10-03 09:41:09,772 - httpcore.connection - DEBUG - _trace.py:47 - trace() - close.started
+2025-10-03 09:41:09,778 - httpcore.connection - DEBUG - _trace.py:47 - trace() - close.complete

@@ -1,0 +1,14 @@
+[project]
+name = "code"
+version = "0.1.0"
+description = "MCP - Paint and Email tools"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dotenv>=0.9.9",
+    "google-genai>=1.39.1",
+    "mcp[cli]>=1.15.0",
+    "npm>=0.1.1",
+    "pillow>=11.3.0",
+    "pywinauto>=0.6.9",
+]

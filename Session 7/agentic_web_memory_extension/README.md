@@ -41,7 +41,13 @@ chrome://extensions → Load unpacked → `agentic_web_memory_extension/chrome_e
 - Query: normalize → search top-k → similarity threshold filter (≥ ~0.5) → de-dup and skip search-result URLs → highlights.
 
 ### Extension Logs
+Text search - Physics
+
+<img width="642" height="241" alt="image" src="https://github.com/user-attachments/assets/1f48f460-60be-496d-a6f2-11c3d58a2f7b" />
+
+
 <img width="1265" height="434" alt="image" src="https://github.com/user-attachments/assets/edb18014-be3f-46eb-85fe-037ff698b3e8" />
+
 
 
 

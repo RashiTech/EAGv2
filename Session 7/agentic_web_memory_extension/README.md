@@ -19,7 +19,7 @@ uv sync
 - `POST /api/search` body: `{ query }`
 
 ### Load Chrome Extension
-chrome://extensions → Load unpacked → `agentic_web_memory_extension/agentic_web_memory_extension/chrome_extension`
+chrome://extensions → Load unpacked → `agentic_web_memory_extension/chrome_extension`
 
 ### Agentic layer (brief)
 - **Perception (`perception.py`)**: parses the user query via LLM to infer `intent` (store|search) and a short `topic`.
@@ -39,5 +39,6 @@ chrome://extensions → Load unpacked → `agentic_web_memory_extension/agentic_
 - Store: `utils/embedding_store.py` using FAISS `IndexIDMap(IndexFlatIP)` with cosine similarity (via L2 normalization).
 - Adds vectors with sidecar metadata `{ url, chunk }` persisted to `data/`.
 - Query: normalize → search top-k → similarity threshold filter (≥ ~0.5) → de-dup and skip search-result URLs → highlights.
+
 
 

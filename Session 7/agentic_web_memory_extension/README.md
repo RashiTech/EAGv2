@@ -40,5 +40,10 @@ chrome://extensions → Load unpacked → `agentic_web_memory_extension/chrome_e
 - Adds vectors with sidecar metadata `{ url, chunk }` persisted to `data/`.
 - Query: normalize → search top-k → similarity threshold filter (≥ ~0.5) → de-dup and skip search-result URLs → highlights.
 
+### Extension Logs
+<img width="1265" height="434" alt="image" src="https://github.com/user-attachments/assets/edb18014-be3f-46eb-85fe-037ff698b3e8" />
+
+
+
 
 

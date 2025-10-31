@@ -1,6 +1,6 @@
-Agentic Web Memory Extension
+## Agentic Web Memory Extension
 
-FastAPI backend + Chrome extension for storing page embeddings and RAG search with Gemini.
+## FastAPI backend + Chrome extension for storing webpage embeddings and RAG search with Gemini.
 
 ### Quick start (PowerShell)
 - **Install uv**:
@@ -11,17 +11,6 @@ iwr https://astral.sh/uv/install.ps1 -UseBasicParsing | iex
 ```powershell
 cd agentic_web_memory_extension
 uv sync
-```
-- **Env (.env at `agentic_web_memory_extension/.env`)**:
-```ini
-GOOGLE_API_KEY=YOUR_KEY
-# optional overrides
-# GEMINI_MODEL=gemini-1.5-flash
-# GEMINI_EMBED_MODEL=text-embedding-004
-```
-- **Run API**:
-```powershell
-uv run agentic-web-memory
 ```
 
 ### API
@@ -35,9 +24,11 @@ chrome://extensions → Load unpacked → `agentic_web_memory_extension/agentic_
 ### Agentic layer (brief)
 - **Perception (`perception.py`)**: parses the user query via LLM to infer `intent` (store|search) and a short `topic`.
 - **Decision (`decision.py`)**: maps `intent` → action (`store_page` or `find_relevant_page`).
+- **Memory ('memory.py')**: user preferences
 - **Action (`action.py`)**: executes:
   - `store_page(url, text)`: chunk → embed → add to FAISS; summarize page to memory.
   - `find_relevant_page(query)`: embed query → vector search → filter → highlights.
+    
 
 ### LLM interface (brief)
 - Wrapper: `utils/llm_interface.py` (Gemini).
@@ -48,4 +39,5 @@ chrome://extensions → Load unpacked → `agentic_web_memory_extension/agentic_
 - Store: `utils/embedding_store.py` using FAISS `IndexIDMap(IndexFlatIP)` with cosine similarity (via L2 normalization).
 - Adds vectors with sidecar metadata `{ url, chunk }` persisted to `data/`.
 - Query: normalize → search top-k → similarity threshold filter (≥ ~0.5) → de-dup and skip search-result URLs → highlights.
+
 

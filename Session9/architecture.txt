@@ -1,0 +1,56 @@
+Here’s the agentic architecture in this repo, very briefly:
+
+- Entry/UI loop — `agent.py`
+  - Starts the agent, loads profile (`config/profiles.yaml`), initializes MCP servers, and runs a REPL.
+  - For each user query, creates an `AgentContext` and invokes the orchestrator.
+
+- Orchestrator — `core/loop.py` (`AgentLoop`)
+  - Step/lifeline loop controls the cycle.
+  - Pipeline per step:
+    1) Perception (select relevant MCP servers/tools)
+    2) Planning (LLM produces an async `solve()` plan)
+    3) Execution (run `solve()` in a sandbox)
+    4) Result handling:
+       - `FINAL_ANSWER:` → return
+       - `FURTHER_PROCESSING_REQUIRED:` → stash intermediate result, continue same step with `user_input_override`
+  - Persists tool traces to memory and enforces limits (lifelines, max steps).
+
+- Perception — `modules/perception.py`
+  - LLM extracts intent/tags and selects MCP servers.
+  - Returns `PerceptionResult` used to scope available tools.
+
+- Planning — `modules/decision.py` + prompts in `prompts/`
+  - Builds a prompt from:
+    - Tool catalog (from selected servers)
+    - User query
+    - Recent memory (tool calls/outputs)
+  - LLM returns a concrete `async def solve():` (one or minimal tool calls, or direct compute).
+  - Prompt variants: conservative / exploratory; all emphasize reusing memory.
+
+- Execution (sandbox) — `modules/action.py`
+  - Compiles and runs `solve()` in a restricted module.
+  - Provides a patched `mcp` client that:
+    - Calls real MCP tools via the dispatcher
+    - Logs each tool call/output into session memory
+  - Caps tool calls per plan (`MAX_TOOL_CALLS_PER_PLAN`).
+
+- Tools/Servers (MCP) — `core/session.py`, `mcp_server_*.py`
+  - `MultiMCP` discovers tools from multiple servers and routes calls by `tool_name`.
+  - Example servers:
+    - `mcp_server_1.py`: math/util tools (add, power, factorial, etc.)
+    - `mcp_server_2.py`: web/doc tools (extract webpage, PDF to markdown, etc.)
+
+- Memory — `modules/memory.py`
+  - Date-based per-session JSON logs of:
+    - run metadata
+    - tool calls and tool outputs (with success flags/tags)
+    - final answer
+  - Read back into prompts to avoid redundant calls and to enable follow-on reasoning.
+
+- Strategy/config — `config/profiles.yaml`, `core/strategy.py`
+  - Controls planning mode, exploration mode, max steps/lifelines, memory behavior.
+  - Chooses the planning prompt path based on strategy.
+
+- Prompts — `prompts/*.txt`
+  - Perception and decision prompt templates (now include prior memory and strict reuse rules).
+  - Conservative prompt encourages zero/one tool call; reuse memory for finalization or local math.

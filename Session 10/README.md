@@ -52,7 +52,6 @@ uv run main_new.py
 ## Customizing the Flow
 
 - **Prompts**: Edit `prompts/perception_prompt.txt` and `prompts/decision_prompt.txt` to change reasoning style, guardrails, or output schemas.
-- **Loop variants**: `agent_loop3.py` is the recommended orchestrator. `agent_loop2.py` remains for comparison/testing but still contains debug hooks (`pdb.set_trace`) and lacks the newer failure-handling logic.
 - **Tooling**: Add or remove MCP tools via `mcp_servers/multiMCP.py` and `config/mcp_server_config.yaml`. Every tool must be invoked through planner-generated code.
 - **Memory control**: Adjust how many recent failures are kept in `GLOBAL_PREVIOUS_FAILURE_STEPS` or provide custom retrieval heuristics in `memory/memory_search.py`.
 
@@ -63,4 +62,5 @@ uv run main_new.py
 - Treat AgentLoop v3 as the conductor: it keeps the pipeline honest, logs everything, and ensures the loop halts the moment the requested artifact is ready.
 
 With these layers working together, the agent delivers fast, reliable answers without wasting tool calls or hallucinating conclusions.
+
 
